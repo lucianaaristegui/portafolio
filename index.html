@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luciana Aristegui - Portafolio Creativo</title>
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="navegacion">
+    <div class="logo">
+    <img src="img/logo/lulydis.jpeg" alt="Logo Luciana Aristegui">
+</div>
+    <ul class="menu">
+      <li><a href="#inicio">INICIO</a></li>
+      <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+      <li><a href="#proyectos">PROYECTOS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- INICIO -->
+  <section id="inicio" class="seccion-inicio">
+    <div class="portada-contenedor">
+      <div class="foto-perfil">
+       <img src="img/perfil/lu.jpeg" alt="Foto de Perfil de Luciana Aristegui">
+      </div>
+      <div class="info-perfil">
+        <h1 class="titulo-interactivo" id="titulo">
+          <span>Luciana</span> <span>Aristegui</span>
+        </h1>
+        <p class="profesion">DISEÑADORA DE IMAGEN Y SONIDO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="seccion-sobre-mi">
+    <h2 class="titulo-seccion">SOBRE MÍ</h2>
+      <p>¡Hola! Soy <strong>Luciana Aristegui</strong>, diseñadora enfocada en <strong>Imagen y Sonido</strong>. Me apasiona contar historias a través de lo visual y lo auditivo, logrando que marcas y proyectos conecten de verdad con su público.</p>
+        <p>Mi trabajo abarca desde la creación de <strong>identidades de marca y estrategias publicitarias</strong> hasta la <strong>edición de video, animación y diseño sonoro</strong>. Disfruto transformar ideas en soluciones creativas y concretas, cuidando tanto la estética gráfica como cada detalle del sonido.</p>
+    </div>
+</section>
+  </section>
+
+  <!-- PROYECTOS (CARPETAS INTERACTIVAS) -->
+  <section id="proyectos" class="seccion-proyectos">
+    <h2 class="titulo-seccion">PROYECTOS</h2>
+    <p class="subtitulo-proyectos">Hacé clic en una carpeta para mirar los trabajos</p>
+
+    <div class="contenedor-grid">
+      
+      <!-- Carpeta 1: Branding -->
+      <article class="tarjeta-carpeta" data-categoria="branding">
+        <div class="solapa"></div>
+        <div class="cuerpo-carpeta">
+          <div class="miniatura-proyecto">
+            
+          </div>
+          <h3>BRANDING</h3>
+          <p>Identidad visual, sistemas de marca.</p>
+        </div>
+      </article>
+
+      <!-- Carpeta 2: Diseño Publicitario -->
+      <article class="tarjeta-carpeta" data-categoria="publicitario">
+        <div class="solapa"></div>
+        <div class="cuerpo-carpeta">
+          <div class="miniatura-proyecto">
+            
+          </div>
+          <h3>DISEÑO PUBLICITARIO</h3>
+          <p>Campañas gráficas, piezas digitales y estrategia visual.</p>
+        </div>
+      </article>
+
+      <!-- Carpeta 3: Audiovisual -->
+      <article class="tarjeta-carpeta" data-categoria="audiovisual">
+        <div class="solapa"></div>
+        <div class="cuerpo-carpeta">
+          <div class="miniatura-proyecto">
+           
+          </div>
+          <h3>AUDIOVISUAL</h3>
+          <p>Edición de video, diseño sonoro y producción multimedia.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACTO (REDES + FORMULARIO INTEGRADOS) -->
+  <section id="contacto" class="seccion-contacto">
+    <h2 class="titulo-seccion">CONTACTO</h2>
+
+    <!-- Botones de Redes -->
+    <div class="redes-contenedor">
+      <a href="https://wa.me/5492245506780" class="boton-red" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+      <a href="https://instagram.com/aristeguiluciana" class="boton-red" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+      <a href="https://facebook.com/lucianaaristegui" class="boton-red" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+      <a href="https://youtube.com/lucianaaristegui" class="boton-red" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+    </div>
+
+    <!-- Formulario compacto Formspree -->
+    <div class="contacto-contenedor">
+      <h3>Enviame un mensaje</h3>
+      <p>Escribime por tu proyecto y te respondo a la brevedad.</p>
+
+      <form id="formulario-contacto" class="contacto-form">
+        <div class="campo-grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="name" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" rows="3" placeholder="Tu consulta..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar" id="btn-submit">Enviar</button>
+        <p id="estado-envio" class="estado-mensaje"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA CON BOTÓN FIJO AL FINAL -->
+  <footer class="pie-pagina">
+    <button id="btnFooterArriba" class="btn-footer-arriba">VOLVER AL INICIO ↑</button>
+    <p class="copyright">© 2026 Luciana Aristegui - Diseño de Imagen y Sonido</p>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE LATERAL PARA VOLVER ARRIBA -->
+  <button id="btnVolverArriba" class="btn-arriba" aria-label="Volver arriba">
+    ↑
+  </button>
+
+  <!-- MODAL VISOR TIPO REVISTA -->
+  <div id="modalRevista" class="modal-revista" aria-hidden="true">
+    <div class="revista-contenedor">
+      <button id="cerrarRevista" class="btn-cerrar-revista" aria-label="Cerrar">×</button>
+      <h3 id="tituloCategoriaRevista" class="revista-titulo-cat">CATEGORÍA</h3>
+      
+      <div class="revista-libro">
+        <button id="btnPaginaAnterior" class="btn-pasar-pagina prev" aria-label="Página anterior">❮</button>
+        
+        <div class="revista-pagina" id="hojaRevista">
+          <div class="revista-imagen-box">
+            <img id="imagenRevista" src="" alt="Vista del proyecto">
+          </div>
+          <div class="revista-info">
+            <h4 id="tituloProyectoRevista">Título del Proyecto</h4>
+            <p id="descripcionProyectoRevista">Descripción breve del trabajo.</p>
+            <span id="contadorPaginas" class="revista-paginacion">Página 1 de 3</span>
+          </div>
+        </div>
+
+        <button id="btnPaginaSiguiente" class="btn-pasar-pagina next" aria-label="Página siguiente">❯</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
