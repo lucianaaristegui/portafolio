@@ -37,7 +37,7 @@ const proyectosPorCarpeta = {
         descripcion: "Desarrollo de logotipo, paleta cromática y manual de marca."
       },
       {
-        imagen: "img/brand/Lali.jpeg",
+        imagen: "img/brand/lali.jpeg",
         titulo: "Rediseño de Marca - Marca 2",
         descripcion: "Sistema gráfico aplicado a indumentaria y papelería."
       },
